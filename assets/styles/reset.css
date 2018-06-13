@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body {
+  background-color: RGBA(247, 247, 247, 1);
+  color: #333333;
+  font-size: 0.26rem;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  font-family: PingFangSC-Regular , arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling:touch;
+  /*超出标签宽度自动换行*/
+  word-wrap: break-word;
+  word-break: break-all;
+  /*为元素设定的宽度和高度决定了元素的边框盒*/
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+/*取消H5浏览器聚焦样式*/
+img,button, textarea, input ,a{
+  vertical-align: middle;
+  border: none;
+  outline: medium !important;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*修改mint-ui中switch样式*/
+.mint-switch-core::before {
+  height: 0.4rem;
+  width: 0.78rem;
+}
+
+.mint-switch-core::after {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.mint-switch-core {
+  height: 0.45rem;
+  width: 0.82rem;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #BFBFBF;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #BFBFBF;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #BFBFBF;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:    #BFBFBF;
+}
+
+select {
+  height: 0.5rem;
+  color:#999999;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../../assets/images/ic_next.png") no-repeat scroll right center transparent;
+  background-size: 0.2rem 0.2rem;
+}
+option{
+    color:#333;
+}
+.arrow{
+  width: .15rem;
+  height: .28rem;
+}
+
+
+.mint-switch .mint-switch-input:checked + .mint-switch-core {
+    border-color: #F29647!important;
+    background-color: #FEB87B!important;
+}/* 修改的开关样式 */
+.mint-checkbox-core {
+    width: .36rem;
+    height: .36rem;
+    background: #fff;
+    border-radius: 0.04rem;
+    border:solid 0.02rem #979797;
+}/* 修改未选中的样式 */
+.mint-checkbox-input:checked + .mint-checkbox-core {
+  background: #fff url("../images/ic_my_selected.png") no-repeat center center !important;
+  background-size: .3rem .3rem !important;
+  border: solid 0.02rem #F29647;
+  border-radius: 0.04rem;
+}/* 修改选中后的样式 */
+.mint-checkbox-input:checked + .mint-checkbox-core::after{
+  border: none;
+}
+.mint-indexlist-nav{
+  border-left: none!important;
+}
+/* 全局富文本样式 */
+.contents{
+  width: 100%;
+}
+.contents img{
+  max-width: 100%;
+}
+table{
+  border-collapse:collapse;
+}
+table, td, th{
+  border:0.01rem solid black;
+}
+
+/* a-z */
+.mint-indexlist-content{
+  width: 100%;
+  margin-right: 0!important;
+}
+.mint-indexlist-nav{
+  background: transparent!important;
+}
+.mint-indexsection-index{
+  background: transparent!important;
+  padding-left: .45rem;
+}
+.mint-checklist-title{
+  margin: 0;
+}
